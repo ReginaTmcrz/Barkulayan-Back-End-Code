@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FourPlayersBoard">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="B" />
+
+    <TextView
+        android:id="@+id/round_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Round 1" />
+
+    <TextView
+        android:id="@+id/random_color_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select Color " />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/redBtn"
+            android:layout_width="116dp"
+            android:layout_height="90dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="onColorButtonClick"
+            android:text="Red" />
+
+        <Button
+            android:id="@+id/blueBtn"
+            android:layout_width="116dp"
+            android:layout_height="90dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="onColorButtonClick"
+            android:text="Blue" />
+
+        <Button
+            android:id="@+id/yellowBtn"
+            android:layout_width="116dp"
+            android:layout_height="90dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="onColorButtonClick"
+            android:text="Green" />
+
+        <Button
+            android:id="@+id/greenBtn"
+            android:layout_width="116dp"
+            android:layout_height="90dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="onColorButtonClick"
+            android:text="Yellow" />
+
+        <Button
+            android:id="@+id/pinkBtn"
+            android:layout_width="116dp"
+            android:layout_height="90dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="onColorButtonClick"
+            android:text="Pink" />
+
+        <Button
+            android:id="@+id/orangeBtn"
+            android:layout_width="116dp"
+            android:layout_height="90dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="onColorButtonClick"
+            android:text="Orange" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/betBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="onDoneButtonClick"
+        android:enabled="false"
+        android:text="Bet" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/username_text_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/username_text_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/username_text_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:text="TextView" />
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/selectedColorsTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="choose color" />
+
+            <TextView
+                android:id="@+id/selectedColorsTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+
+                android:text="choose color" />
+
+            <TextView
+                android:id="@+id/selectedColorsTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:text="choose color" />
+
+
+        </GridLayout>
+    </GridLayout>
+</LinearLayout>
